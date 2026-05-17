@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>AWS Production Auto-Healing Platform</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function updateServerInfo() {
+            document.getElementById("server-time").innerHTML =
+                new Date().toLocaleString();
+        }
+
+        setInterval(updateServerInfo, 1000);
+    </script>
+</head>
+<body onload="updateServerInfo()">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            ☁ AWS CloudOps
+        </div>
+
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#services">Services</a>
+            <a href="#monitoring">Monitoring</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#status">Status</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-left">
+            <h1>
+                Production-Ready <span>Auto-Healing</span><br>
+                Scalable Cloud Infrastructure
+            </h1>
+
+            <p>
+                High availability AWS infrastructure with Auto Scaling,
+                Load Balancer, CloudWatch monitoring, SNS alerts,
+                secure networking, and Terraform automation.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="primary-btn">Infrastructure Active</button>
+                <button class="secondary-btn">Cloud Monitoring Enabled</button>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="status-card">
+                <h3>System Status</h3>
+
+                <div class="status-item">
+                    <span>Application Load Balancer</span>
+                    <span class="green">Healthy</span>
+                </div>
+
+                <div class="status-item">
+                    <span>EC2 Auto Scaling</span>
+                    <span class="green">Running</span>
+                </div>
+
+                <div class="status-item">
+                    <span>RDS Database</span>
+                    <span class="green">Connected</span>
+                </div>
+
+                <div class="status-item">
+                    <span>CloudWatch Monitoring</span>
+                    <span class="green">Enabled</span>
+                </div>
+
+                <div class="status-item">
+                    <span>SNS Alerts</span>
+                    <span class="green">Operational</span>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="section" id="overview">
+
+        <h2>Project Overview</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>High Availability</h3>
+                <p>
+                    Multiple EC2 instances distributed across multiple
+                    Availability Zones behind an Application Load Balancer.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Auto-Healing</h3>
+                <p>
+                    Automatically replaces unhealthy EC2 instances using
+                    Auto Scaling Groups and ELB health checks.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Monitoring</h3>
+                <p>
+                    CloudWatch metrics and SNS notifications provide
+                    real-time monitoring and alerting.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section dark-section" id="services">
+
+        <h2>AWS Services Used</h2>
+
+        <div class="service-grid">
+
+            <div class="service-box">EC2</div>
+            <div class="service-box">Application Load Balancer</div>
+            <div class="service-box">Auto Scaling Group</div>
+            <div class="service-box">Amazon RDS</div>
+            <div class="service-box">Amazon VPC</div>
+            <div class="service-box">CloudWatch</div>
+            <div class="service-box">SNS Alerts</div>
+            <div class="service-box">S3 Storage</div>
+            <div class="service-box">IAM Roles</div>
+            <div class="service-box">Terraform</div>
+
+        </div>
+
+    </section>
+
+    <!-- MONITORING -->
+    <section class="section" id="monitoring">
+
+        <h2>Infrastructure Monitoring</h2>
+
+        <div class="monitoring-grid">
+
+            <div class="monitor-card">
+                <h3>CPU Usage</h3>
+                <p>Normal</p>
+            </div>
+
+            <div class="monitor-card">
+                <h3>Traffic Load</h3>
+                <p>Balanced</p>
+            </div>
+
+            <div class="monitor-card">
+                <h3>Auto Scaling</h3>
+                <p>Healthy</p>
+            </div>
+
+            <div class="monitor-card">
+                <h3>Database Health</h3>
+                <p>Connected</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ARCHITECTURE -->
+    <section class="section dark-section" id="architecture">
+
+        <h2>Architecture Highlights</h2>
+
+        <div class="architecture">
+
+            <div class="arch-box">Internet Gateway</div>
+            <div class="arch-arrow">↓</div>
+
+            <div class="arch-box">Application Load Balancer</div>
+            <div class="arch-arrow">↓</div>
+
+            <div class="arch-box">Auto Scaling EC2 Instances</div>
+            <div class="arch-arrow">↓</div>
+
+            <div class="arch-box">Private RDS Database</div>
+
+        </div>
+
+    </section>
+
+    <!-- STATUS -->
+    <section class="section" id="status">
+
+        <h2>Live Infrastructure Status</h2>
+
+        <div class="live-status">
+
+            <div class="live-box">
+                <h3>Server Time</h3>
+                <p id="server-time"></p>
+            </div>
+
+            <div class="live-box">
+                <h3>Deployment</h3>
+                <p>Production Environment</p>
+            </div>
+
+            <div class="live-box">
+                <h3>Scalability</h3>
+                <p>Dynamic Auto Scaling Enabled</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            AWS Production Auto-Healing Infrastructure |
+            Built for DevOps & Cloud Engineering Portfolio
+        </p>
+
+    </footer>
+
+</body>
+</html>
