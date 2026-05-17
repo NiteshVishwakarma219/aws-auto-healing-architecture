@@ -37,7 +37,7 @@ The architecture uses multiple AWS services integrated together to simulate a **
 > Add architecture image inside screenshots folder
 
 ```bash
-screenshots/architecture.png
+screenshot/architecture.png
 ```
 
 ---
